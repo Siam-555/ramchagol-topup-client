@@ -1,21 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const navOptions = <>
-    <li><a>Battle Royale</a></li>
-    <li>
-      <details>
-        <summary>Available Games</summary>
-        <ul className="p-2">
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
-        </ul>
-      </details>
-    </li>
-    <li><a>Offers</a></li>
+    <li><Link to='/'>Home</Link></li>
+    <li><Link to=''>Battle Royale</Link></li>
+    <li><Link to=''>Offers</Link></li>
   </>
 
   return (
     <>
-      <div className="navbar fixed z-10 bg-opacity-30 bg-gray-800 text-white shadow-xl">
+      <div className="navbar fixed z-10 backdrop-blur-sm bg-opacity-30 bg-gray-600 text-white shadow-xl">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,7 +19,7 @@ const Navbar = () => {
               {navOptions}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">RamChagol TopUp</a>
+          <Link to='/' className="btn btn-ghost text-xl">RamChagol TopUp</Link>
         </div>
 
         <div className="navbar-center hidden lg:flex">

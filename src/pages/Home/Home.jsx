@@ -1,11 +1,17 @@
+import { Helmet } from "react-helmet-async";
 import Banner from "./Banner/Banner";
-import Games from "./Games/Games";
+import PopularGames from "./PopularGames/PopularGames";
+import Overview from "./Overview/Overview";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>RamChagol TopUp | Home</title>
+      </Helmet>
       <Banner></Banner>
-      <Games></Games>
+      <PopularGames></PopularGames>
+      <Overview></Overview>
     </div>
   );
 };

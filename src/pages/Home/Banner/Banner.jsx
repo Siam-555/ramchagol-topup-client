@@ -11,6 +11,13 @@ import img4 from "../../../assets/img4.jpg";
 import img5 from "../../../assets/img5.jpg";
 import img6 from "../../../assets/img6.jpg";
 
+// import img1 from "../../../assets/simg1.jpg";
+// import img2 from "../../../assets/simg2.jpg";
+// import img3 from "../../../assets/simg3.jpg";
+// import img4 from "../../../assets/simg4.jpg";
+// import img5 from "../../../assets/simg5.jpg";
+// import img6 from "../../../assets/simg6.jpg";
+
 const Banner = () => {
   return (
     <section className='pt-3'>
